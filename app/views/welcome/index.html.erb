@@ -1,0 +1,15 @@
+<h1>Hello, cruel world</h1>
+
+<p>
+	<% if @last_click_moment %>
+		Last click was at: <%= format_date(@last_click_moment) %> (ID: <%= @last_click_id %>)
+	<% else %>
+		<i>There have been no clicks!</i>
+	<% end %>
+</p>
+
+<p>
+	<%= form_tag(click_path) do %>
+		<%= submit_tag 'Click' %>
+	<% end %>
+</p>
