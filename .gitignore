@@ -1,3 +1,7 @@
 vendor/ruby
 .bundle/
 vendor/cache
+tmp/
+log/
+webrat.log
+config/database.yml

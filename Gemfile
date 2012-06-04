@@ -13,6 +13,24 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+
+  gem 'guard'
+  gem 'guard-spork'
+  gem 'guard-rspec'  
+
+  gem 'machinist'
+  gem 'ffaker'
+  
+  gem 'spork'
+  gem 'shoulda-matchers'
+  
+  gem 'launchy'
+  gem 'capybara'
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
